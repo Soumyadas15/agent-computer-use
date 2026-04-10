@@ -15,6 +15,6 @@ thiserror = { workspace = true }
 async-trait = { workspace = true }
 tracing = { workspace = true }
 
-# TODO: Add when implementing Linux backend
-# [target.'cfg(target_os = "linux")'.dependencies]
-# zbus = "4"
+[target.'cfg(target_os = "linux")'.dependencies]
+zbus = { version = "5", default-features = false, features = ["tokio"] }
+tokio = { workspace = true }
