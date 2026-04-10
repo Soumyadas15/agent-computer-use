@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1
+
+### Patch Changes
+
+- [#3](https://github.com/kortix-ai/agent-click/pull/3) [`25fc8ad`](https://github.com/kortix-ai/agent-click/commit/25fc8ad99769a21f2b7d70f854355fc69d05d988) Thanks [@Soumyadas15](https://github.com/Soumyadas15)! - Fix scroll and drag on Windows; activate target window before sending input events
+
 ## 0.1.0 (Unreleased)
 
 ### Features
