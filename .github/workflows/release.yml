@@ -15,11 +15,14 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          # Both macOS targets build on macos-latest (Apple Silicon).
+          # x86_64 is a cross-compile — Apple's toolchain supports it
+          # natively, no extra setup needed beyond `rustup target add`.
           - os: macos-latest
             target: aarch64-apple-darwin
             artifact: agent-click-macos-arm64
             ext: ''
-          - os: macos-13
+          - os: macos-latest
             target: x86_64-apple-darwin
             artifact: agent-click-macos-x64
             ext: ''
