@@ -77,7 +77,7 @@ try {
   if (typeof err.status !== 'number') {
     console.error(`agent-cu: failed to run ${binary}`);
     console.error(`  ${err.code || 'error'}: ${err.message}`);
-    console.error(`  try reinstalling: npm i -g @kortix-ai/agent-computer-use@latest`);
+    console.error(`  try reinstalling: npm i -g agent-cu@latest`);
   }
   process.exit(typeof err.status === 'number' ? err.status : 1);
 }
