@@ -14,7 +14,7 @@ export function DocsLayout({ children }: { children: ReactNode }) {
         <Sidebar />
         <main className="flex-1 min-w-0">
           <div className="relative max-w-[680px] px-6 md:px-10 py-8 pb-20">
-            <div className="absolute right-6 md:right-10 top-8">
+            <div className="mb-4 flex justify-start md:absolute md:right-10 md:top-8 md:mb-0 md:justify-end">
               <CopyPage />
             </div>
             {children}

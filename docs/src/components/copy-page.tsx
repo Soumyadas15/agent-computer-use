@@ -196,7 +196,7 @@ export function CopyPage() {
   return (
     <div data-copy-page>
       <DropdownMenu>
-        <DropdownMenuTrigger className="flex items-center gap-1.5 rounded-lg border border-border/50 px-2.5 py-1.5 text-muted-foreground transition-colors hover:text-foreground hover:border-border hover:bg-muted/50 outline-none">
+        <DropdownMenuTrigger className="flex items-center gap-1.5 rounded-lg border text-sm border-border/50 px-2.5 py-1.5 text-muted-foreground transition-colors hover:text-foreground hover:border-border hover:bg-muted/50 outline-none">
           {copied ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
           {copied ? 'Copied!' : 'Copy page'}
           <ChevronDown className="h-3 w-3" />
