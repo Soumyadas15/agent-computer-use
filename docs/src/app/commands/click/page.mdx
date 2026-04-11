@@ -5,7 +5,7 @@ import { PageHeader } from '@/components/docs';
 ## Usage
 
 ```bash
-agent-click click [SELECTOR] [OPTIONS]
+agent-computer-use click [SELECTOR] [OPTIONS]
 ```
 
 ## Options
@@ -31,25 +31,25 @@ For single left-clicks, AXPress handles ~95% of cases headlessly. Double-click a
 
 ```bash
 # By ref (from snapshot)
-agent-click click @e5
+agent-computer-use click @e5
 
 # By selector
-agent-click click 'name="Login"' -a Safari
-agent-click click 'id="play"' -a Music
-agent-click click 'id~="track-123"' -a Music    # partial id match
-agent-click click 'button "Submit"' -a Safari   # shorthand
+agent-computer-use click 'name="Login"' -a Safari
+agent-computer-use click 'id="play"' -a Music
+agent-computer-use click 'id~="track-123"' -a Music    # partial id match
+agent-computer-use click 'button "Submit"' -a Safari   # shorthand
 
 # Double-click (opens files, plays songs)
-agent-click click @e5 --count 2
+agent-computer-use click @e5 --count 2
 
 # Right-click
-agent-click click @e5 --button right
+agent-computer-use click @e5 --button right
 
 # Coordinate click (when no selector works)
-agent-click click --x 500 --y 300 -a Finder
+agent-computer-use click --x 500 --y 300 -a Finder
 
 # Click then verify
-agent-click click @e5 --expect 'name="Dashboard"'
+agent-computer-use click @e5 --expect 'name="Dashboard"'
 ```
 
 ## CDP (Electron apps)
@@ -57,7 +57,7 @@ agent-click click @e5 --expect 'name="Dashboard"'
 For Electron apps (Slack, Cursor, VS Code), click routes through CDP automatically:
 
 ```bash
-agent-click click @e5    # JS element.click() via CDP — fully headless
+agent-computer-use click @e5    # JS element.click() via CDP — fully headless
 ```
 
 No window activation, no mouse, no coordinates. The element is clicked via JavaScript.
@@ -67,4 +67,4 @@ No window activation, no mouse, no coordinates. The element is clicked via JavaS
 - Always snapshot first to get fresh refs
 - Use `id=` selectors when available — most stable across UI changes
 - Use `--count 2` for items that need double-click (file lists, track lists)
-- Check with `agent-click get-value @e5` if unsure whether an element is clickable
+- Check with `agent-computer-use get-value @e5` if unsure whether an element is clickable
