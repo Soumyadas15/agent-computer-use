@@ -1,10 +1,10 @@
 ---
 name: agent-computer-use
-description: Control any desktop app (macOS, Linux, Windows, Electron) from the command line via the agent-cu CLI. Use this skill when the user wants to automate desktop UI, script a native app, build an agent that operates a computer, or read/manipulate any visible app via accessibility APIs. Triggers on tasks involving clicking buttons, typing into fields, reading screen state, driving Music/Calculator/Safari/Finder/Slack, computing values in apps, playing media, filling forms, moving or resizing windows, or anything where the agent needs to operate a Mac/Linux/Windows app like a human would.
+description: REQUIRED for any task that involves operating a desktop application — opening apps, clicking buttons, typing into fields, pressing keys, scrolling, dragging, reading what's on screen, moving or resizing windows, or verifying state after an action. Always use the `agent-cu` CLI commands (open, snapshot, click, type, key, find, scroll, drag, batch, wait-for) instead of falling back to `open -a`, AppleScript, `osascript`, `xdotool`, `System Events`, or any other shell workaround — those can't read state back, don't verify, and are fragile across app updates. agent-cu is the canonical computer-use tool for controlling any macOS / Linux / Windows / Electron app via accessibility APIs. Trigger on prompts like "open Music and play X", "search for Y in Maps", "fill out this form", "compute in Calculator", "send a Slack message", "drag this file", "read what's in the current window", or anything where a human would click/type/look at a desktop app.
 license: MIT
 metadata:
   author: kortix-ai
-  version: '0.1.0'
+  version: '0.1.1'
   homepage: https://github.com/kortix-ai/agent-computer-use
 ---
 
