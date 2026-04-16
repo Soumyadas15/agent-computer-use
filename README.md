@@ -1,9 +1,16 @@
 # agent-computer-use
 
-> Control any desktop app from the command line using accessibility APIs. No vision tokens, no screenshots required, deterministic. Works with Claude, Cursor, local models, or just you.
+[![Stars](https://img.shields.io/github/stars/kortix-ai/agent-computer-use?style=flat&logo=github&color=a8d420)](https://github.com/kortix-ai/agent-computer-use/stargazers)
+[![npm](https://img.shields.io/npm/v/agent-cu?color=a8d420)](https://www.npmjs.com/package/agent-cu)
+[![Downloads](https://img.shields.io/npm/dm/agent-cu?color=a8d420)](https://www.npmjs.com/package/agent-cu)
+[![License](https://img.shields.io/github/license/kortix-ai/agent-computer-use?color=a8d420)](./LICENSE)
+[![skills.sh](https://img.shields.io/badge/skills.sh-agent--computer--use-a8d420)](https://skills.sh)
+
+> **One CLI. Any desktop app. Like a human would.**
+> Click buttons, type text, read screens on macOS / Linux / Windows / Electron — no vision tokens, no screenshots, deterministic. For AI agents (Claude, Cursor, Codex, local models) and humans alike.
 
 <p align="center">
-  <img src="assets/demo.gif" alt="agent-cu demo: opening Music, playing a song, launching Calculator, computing 7^8" />
+  <img src="assets/demo.gif" alt="agent-cu demo: opening Music, playing a song, launching Calculator, computing 7^8" width="720" />
 </p>
 
 ```bash
@@ -23,6 +30,12 @@
 | Open source, local  | ✅            | ❌                     | ❌         | ✅        |
 
 Built in Rust. Runs locally. Zero per-action cost.
+
+## Used by
+
+- **[Kortix](https://github.com/kortix-ai)** — building next-generation AI agents
+- Ships as a skill on **[skills.sh](https://skills.sh)** — usable from Claude Code, Cursor, Codex, Copilot, OpenCode, Cline, and 40+ other agents
+- Using agent-cu in production? **[Open a PR](https://github.com/kortix-ai/agent-computer-use/pulls)** to add your logo here
 
 ## Installation
 
@@ -306,6 +319,12 @@ pnpm bench:diff     # compare benchmark runs
 | Electron apps (CDP)    | Preview |
 | Windows (UIAutomation) | Preview |
 | Linux (AT-SPI2)        | Preview |
+
+## Star history
+
+<a href="https://star-history.com/#kortix-ai/agent-computer-use&Date">
+  <img src="https://api.star-history.com/svg?repos=kortix-ai/agent-computer-use&type=Date" alt="Star history" width="620" />
+</a>
 
 ## License
 

@@ -433,6 +433,21 @@ pub enum Command {
     #[command(name = "check-permissions", alias = "check")]
     CheckPermissions,
 
+    /// Configure Claude Code / agent integrations
+    ///
+    /// Interactively adds `Bash(agent-cu *)` to Claude Code's permissions
+    /// allow-list so agent-cu runs without per-command approval prompts.
+    /// Respects the trust boundary — nothing happens without explicit consent.
+    ///
+    /// Examples:
+    ///   agent-cu setup          # interactive
+    ///   agent-cu setup --yes    # auto-approve, global scope
+    Setup {
+        /// Skip prompts — apply unsupervised + global without asking
+        #[arg(short, long)]
+        yes: bool,
+    },
+
     /// Generate shell completions
     ///
     /// Output shell completions to stdout.
