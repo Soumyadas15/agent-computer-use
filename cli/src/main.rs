@@ -3,6 +3,7 @@ pub mod batch;
 pub mod cli;
 mod observe;
 mod selector_dsl;
+pub mod setup;
 pub mod snapshot;
 pub mod wait;
 pub mod workflow;

@@ -426,6 +426,11 @@ pub async fn run(
             output.print(&apps);
         }
 
+        Command::Setup { yes, mode, scope } => {
+            crate::setup::run(yes, mode, scope)?;
+            let _ = output;
+        }
+
         Command::Completions { shell } => {
             let mut cmd = <Cli as clap::CommandFactory>::command();
             clap_complete::generate(
