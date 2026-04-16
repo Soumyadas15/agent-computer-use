@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1
+
+### Patch Changes
+
+- [#22](https://github.com/kortix-ai/agent-computer-use/pull/22) [`dd4c29f`](https://github.com/kortix-ai/agent-computer-use/commit/dd4c29fe666de577907de4e0699d269e5330b93f) Thanks [@kortix-agent](https://github.com/kortix-agent)! - agent-cu setup — interactive (and scriptable) wizard to configure Claude Code so agent-cu runs without per-command approval prompts. Supports --mode/--scope flags for non-interactive use.
+
 ## 0.1.2
 
 ### Patch Changes
